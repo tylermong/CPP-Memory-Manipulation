@@ -3,12 +3,12 @@
 
 int main()
 {
-	int varInt{ 123456 };
-	std::string varString{ "DefaultString" };
-	char arrChar[128]{ "Long char array and some random text" };
-	int* ptr2int{ &varInt };
-	int** ptr2ptr{ &ptr2int };
-	int*** ptr2ptr2{ &ptr2ptr };
+	int nums { 123456 };
+	std::string word { "DefaultString" };
+	char sentence[128]{ "Long char array and some random text" };
+	int* pNums{ &nums };
+	int** ppNums{ &pNums };
+	int*** pppNums{ &ppNums };
 
 	boolean loop = true;
 	while (loop)
@@ -19,15 +19,15 @@ int main()
 
 		std::cout << std::endl;
 
-		std::cout << "varInt\t\t(0x" << &varInt << ") = " << varInt << std::endl;
-		std::cout << "varString\t(0x" << &varString << ") = " << varString << std::endl;
-		std::cout << "arrChar[128]\t(0x" << &arrChar << ") = " << arrChar << std::endl;
+		std::cout << "nums\t\t(0x" << &nums << ") = " << nums << std::endl;
+		std::cout << "word\t\t(0x" << &word << ") = " << word << std::endl;
+		std::cout << "sentence[128]\t(0x" << &sentence << ") = " << sentence << std::endl;
 
 		std::cout << std::endl;
 
-		std::cout << "ptr2int\t\t(0x" << &ptr2int << ") = 0x" << ptr2int << std::endl;
-		std::cout << "ptr2ptr\t\t(0x" << &ptr2ptr << ") = 0x" << ptr2ptr << std::endl;
-		std::cout << "ptr2ptr2\t(0x" << &ptr2ptr2 << ") = 0x" << ptr2ptr2 << std::endl;
+		std::cout << "pNums\t\t(0x" << &pNums << ") = 0x" << pNums << std::endl;
+		std::cout << "ppNums\t\t(0x" << &ppNums << ") = 0x" << ppNums << std::endl;
+		std::cout << "pppNums\t\t(0x" << &pppNums << ") = 0x" << pppNums << std::endl;
 
 		std::cout << std::endl;
 
